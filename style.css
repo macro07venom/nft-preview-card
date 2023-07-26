@@ -1,0 +1,125 @@
+
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+:root {
+    --Paleblue: hsl(225, 100%, 94%);
+--Brightblue: hsl(245, 75%, 52%);
+--Verypaleblue: hsl(225, 100%, 98%);
+--Desaturatedblue: hsl(224, 23%, 55%);
+--Darkblue: hsl(223, 47%, 23%);
+}
+body {
+    font-size: 16px;
+    background-color: var(--Paleblue);
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(file:///F:/programming/front%20end%20monetor%20challenge/fifth%20project/order-summary-component-main/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    color: var(--Desaturatedblue);
+    text-align: center;
+}
+.main-container {
+    background-color: white;
+    display: -ms-grid;
+    display: grid;
+    margin: 50px auto;
+    width: 400px;
+    height: 650px;
+    border-radius: 1rem;
+}
+.main-container .main-image {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0 ;
+}
+.main-image {
+    width: 100%;
+}
+h2 {
+    color: var(--Darkblue);
+    margin-top: 0;
+}
+.deal {
+    position: relative;
+    background-color: var(--Verypaleblue);
+    margin: 25px auto;
+    width:300px;
+    height: 120px;
+    border-radius: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 15px;
+    gap: 10px;
+}
+.grid {
+    display: -ms-grid;
+    display: grid;
+}
+.grid .plan {
+    color: var(--Darkblue);
+    font-weight: bold;
+}
+.change {
+    margin-left: 50px;
+    color: var(--Brightblue);
+    text-decoration: underline;
+    -webkit-transition:  .2s ease-in-out;
+    -o-transition:  .2s ease-in-out;
+    transition:  .2s ease-in-out;
+}
+.change:hover {
+    text-decoration: none;
+    opacity: .7;
+    cursor: pointer;
+}
+main-p {
+    display: -ms-grid;
+    display: grid;
+    margin: 0 auto;
+    padding: 0px 55px;
+}
+button.payment {
+        background-color: var(--Brightblue);
+        color: var(--Verypaleblue);
+        width: 300px;
+        height: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin:  auto;
+        border-radius: 0.5rem;
+        border: none;
+        -webkit-box-shadow: 0 5px 15px -5px var(--Brightblue);
+                box-shadow: 0 5px 15px -5px var(--Brightblue);
+        cursor: pointer;
+        -webkit-transition:  .2s ease-in-out;
+        -o-transition:  .2s ease-in-out;
+        transition:  .2s ease-in-out;
+ }
+ button.payment:hover {
+    opacity: .7;
+ }
+ .order {
+    margin-top: 30px;
+    font-weight: bold;
+    -webkit-transition:  .2s ease-in-out;
+    -o-transition:  .2s ease-in-out;
+    transition:  .2s ease-in-out;
+ }
+ .order:hover {
+    cursor: pointer;
+    color: var(--Darkblue);
+ }
+
+ @media all and (max-width: 450px) {
+    .main-container {
+        width: 350px;
+        margin: 25px auto;
+    }
+}
+
+
